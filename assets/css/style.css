@@ -95,12 +95,18 @@ li {
 	list-style-type: none;
 }
 
+p {
+	font-size: 14px;
+}
+
 .container {
 	min-height: 100vh;
 }
 
 section {
 	min-height: 100vh;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 .header {
@@ -242,4 +248,61 @@ section {
 
 .social a i {
 	font-size: 22px;
+}
+
+.section-one {
+	padding-top: 100px;
+	background-color: var(--bg-color-two);
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+}
+
+.section-one img {
+	height: 600px;
+	width: auto;
+	align-self: flex-end;
+}
+
+.hero-content {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 500px;
+}
+
+.hero-content h3 {
+	font-size: 18px;
+	font-weight: 700;
+	opacity: 0.7;
+}
+
+.hero-content h1 {
+	font-size: 40px;
+}
+
+.hero-content p {
+	font-size: 16px;
+	opacity: 0.8;
+}
+
+.btn {
+	padding: 10px;
+	width: 160px;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--color-white);
+	background-color: var(--btn-bg);
+	cursor: pointer;
+	transition: all 400ms ease;
+}
+
+.btn:hover {
+	background-color: var(--color-white);
+	color: var(--btn-bg);
+}
+
+.btn:active {
+	opacity: 0.7;
 }
