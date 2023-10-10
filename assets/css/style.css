@@ -390,7 +390,10 @@ section {
 .section-three {
 	padding: 50px 100px;
 	background-color: var(--bg-color-two);
+	display: flex;
+	align-items: center;
 }
+
 .upcoming {
 	width: 100%;
 	height: 500px;
