@@ -117,6 +117,12 @@ section {
 	background-color: rgba(255, 255, 255, 0.5);
 	position: fixed;
 	width: 100%;
+	z-index: 1;
+}
+
+.logo img {
+	height: 50px;
+	width: auto;
 }
 
 .menu {
@@ -147,10 +153,16 @@ section {
 	padding-right: 20px;
 }
 
+.login a:hover,
+.login a:focus {
+	color: var(--color-white);
+
+}
+
 
 .login a {
 	font-size: 18px;
-	color: var(--color-white);
+	color: var(--bg-color-black);
 	font-weight: 600;
 }
 
@@ -183,6 +195,11 @@ section {
 .two h2,
 .two p {
 	color: var(--color-white);
+}
+
+.first img {
+	height: auto;
+	width: 200px;
 }
 
 .about-link {
@@ -256,6 +273,9 @@ section {
 	display: flex;
 	gap: 50px;
 	justify-content: center;
+	/* background-image: url(../../img/hero-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover; */
 }
 
 .section-one img {
@@ -305,4 +325,65 @@ section {
 
 .btn:active {
 	opacity: 0.7;
+}
+
+/* Section two */
+
+.section-two {
+	display: flex;
+	padding: 100px 200px;
+	gap: 100px;
+	background-color: var(--bg-color-one);
+	position: relative;
+}
+
+.about-img {
+	display: flex;
+	position: relative;
+}
+
+.about-img img {
+	height: 300px;
+	width: auto;
+	border-radius: 30px;
+}
+
+.about-img-one {
+	position: absolute;
+	top: 200px;
+}
+
+.about-img-two {
+	position: absolute;
+	left: 250px;
+}
+
+.about-img-three {
+	position: absolute;
+	left: 300px;
+	top: 250px;
+}
+
+.about-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-self: flex-end;
+	position: absolute;
+	right: 150px;
+	top: 150px;
+	max-width: 500px;
+}
+
+.about-content h2 {
+	color: #02a3ed;
+	font-weight: 700;
+}
+
+.about-content h1 {
+	font-size: 35px;
+}
+
+.about-content p {
+	font-size: 16px;
 }
